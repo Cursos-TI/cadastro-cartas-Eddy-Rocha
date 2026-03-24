@@ -91,10 +91,22 @@ int main() {
 
     // Uso de If else para definir a carta vencedora
 
-    if(populacao1 > pontosturisticos1){
-        printf("Carta 1 %s venceu!! População %d",cidade1,populacao1);
+    if(populacao1 > populacao2){
+        printf("Carta 1 - %s venceu!! População: %d\n",cidade1,populacao1);
     } else {
-        printf("Carta 2 %s venceu!! População %d",cidade2,populacao2);
+        printf("Carta 2 - %s venceu!! População: %d\n",cidade2,populacao2);
+    }
+
+    if(area1 > area2){
+        printf("Carta 1 - %s venceu!! Área: %.2f Km² \n",cidade1,area1);
+    } else {
+        printf("Carta 2 - %s venceu!! Área: %.2f Km² \n",cidade2,area2);
+    }
+
+    if(pib1 > pib2){
+        printf("Carta 1 - %s venceu!! PIB: %.2f Bilhões de reais \n",cidade1,pib1);
+    } else {
+        printf("Carta 2 - %s venceu!! PIB: %.2f Bilhões de reais \n",cidade2,pib2);
     }
 
     return 0;
